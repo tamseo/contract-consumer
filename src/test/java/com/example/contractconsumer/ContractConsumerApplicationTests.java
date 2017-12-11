@@ -18,7 +18,6 @@ public class ContractConsumerApplicationTests {
     @Test
     public void helloWorld() {
         String message = restTemplate.getForObject("http://localhost:8090/hello", String.class);
-        Assert.assertEquals(message, "{\"message\":\"Hello world\"}");
+        Assert.assertEquals(message, "{\"message\":\"Hello World\"}");
     }
-
 }
